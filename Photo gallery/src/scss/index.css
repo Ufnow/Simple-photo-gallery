@@ -1,0 +1,121 @@
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.content h1 {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: lighter;
+  font-size: 400%;
+  color: rgba(46, 45, 45, 0.904);
+  margin: 20px;
+}
+
+.content .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.content .buttons .btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #ffffff;
+  cursor: pointer;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  color: #086591;
+  border-radius: 20px;
+  height: 30px;
+  border: solid 1px;
+  margin: 9px;
+  font-weight: 100;
+  vertical-align: middle;
+  line-height: 4px;
+}
+
+.content .buttons .active {
+  background-color: #086591;
+  color: #ffffff;
+}
+
+.content #container {
+  display: -ms-grid;
+  display: grid;
+  width: 1000px;
+  grid-gap: 10px;
+  -ms-grid-columns: (242px)[auto-fill];
+      grid-template-columns: repeat(auto-fill, 242px);
+  grid-auto-rows: 242px;
+  grid-auto-flow: dense;
+}
+
+@media screen and (max-width: 800px) {
+  .content #container {
+    width: 500px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .content #container .box1 {
+    width: 45%;
+    padding: 5px;
+    -webkit-box-flex: 2;
+        -ms-flex-positive: 2;
+            flex-grow: 2;
+  }
+}
+
+.content #container .box1 .img {
+  height: 100%;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 5px;
+}
+
+.content #container .box2 {
+  height: 100%;
+  width: 100%;
+  height: 242px;
+  grid-column: span 2;
+}
+
+@media screen and (max-width: 800px) {
+  .content #container .box2 {
+    height: 245px;
+    width: 100%;
+    padding: 5px;
+  }
+}
+
+.content #container .box2 .img {
+  height: 100%;
+  width: 100%;
+  margin: 5px;
+}
+/*# sourceMappingURL=index.css.map */

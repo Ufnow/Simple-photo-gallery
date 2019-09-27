@@ -1,0 +1,86 @@
+.content {
+  display: flex;
+  align-items: center;
+  flex-direction: column; }
+  .content h1 {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: lighter;
+    font-size: 400%;
+    color: rgba(46, 45, 45, 0.904);
+    margin: 20px; }
+  .content .buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; }
+    .content .buttons .btn {
+      border: none;
+      outline: none;
+      padding: 12px 16px;
+      background-color: #ffffff;
+      cursor: pointer;
+      flex-flow: column;
+      color: #086591;
+      border-radius: 20px;
+      height: 30px;
+      border: solid 1px;
+      margin: 9px;
+      font-weight: 100;
+      vertical-align: middle;
+      line-height: 4px; }
+    .content .buttons .active {
+      background-color: #086591;
+      color: #ffffff; }
+  .content #container {
+    display: grid;
+    width: 1000px;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fill, 242px);
+    grid-auto-rows: 242px;
+    grid-auto-flow: dense; }
+    @media screen and (max-width: 800px) {
+      .content #container {
+        width: 500px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: stretch; } }
+    @media screen and (max-width: 800px) {
+      .content #container .box1 {
+        width: 45%;
+        padding: 5px;
+        flex-grow: 2; } }
+    .content #container .box1 .img {
+      height: 100%;
+      width: 100%;
+      box-sizing: border-box;
+      margin: 5px; }
+    .content #container .box2 {
+      height: 100%;
+      width: 100%;
+      height: 242px;
+      grid-column: span 2; }
+      @media screen and (max-width: 800px) {
+        .content #container .box2 {
+          height: 245px;
+          width: 100%;
+          padding: 5px; } }
+      .content #container .box2 .img {
+        height: 100%;
+        width: 100%;
+        margin: 5px; }
+    .content #container #checkpoint {
+      display: none; }
+  .content #showmore-btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: #086591;
+    cursor: pointer;
+    flex-flow: column;
+    color: #ffffff;
+    border-radius: 20px;
+    height: 30px;
+    border: solid 1px;
+    margin: 9px;
+    font-weight: 100;
+    vertical-align: middle;
+    line-height: 4px; }

@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <title>Photo Gallery</title>
+        <link rel="stylesheet" href="dist/styles.css">
+    </head>
+    <body onresize="keepObjectsSquare()">
+        <section class="content">
+
+      <h1>Photo Gallery</h1>
+
+
+<div class = "buttons" id="myBtnContainer">
+	          <button class="btn active" onclick="filter('all')">show all</button>
+            <button class="btn" onclick="filter('unsplash')">unsplash</button>
+            <button class="btn" onclick="filter('littlevisuals')">littlevisuals</button>
+            <button class="btn" onclick="filter('travelcoffeebook')">travelcoffebook</button>
+            <button class="btn" onclick="filter('jaymantri')">jaymantri</button>
+            </div>
+        </div>
+    </div>
+  
+<div id = images>
+    <div id ="container" class = "container"> 
+
+    </div>
+    </div>
+</div>
+<div id = "showmore"></div>
+
+        </section>
+        <script src="dist/bundle.js"></script>
+    </body>
+</html>
